@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block main %}
+	<div>
+		<h1 class="post-title">{{ post.title }}</h1>
+		<ul class="post-meta">
+			<li>By {{ post.user.username }}</li>
+			<li>
+			<i class='bx bx-calendar'></i>
+			<span class="text-secondary">{{ post.created }}</span>
+			</li>
+			<li>
+			<i class='bx bxs-category-alt'></i>
+			<span class="text-secondary">{{ post.category }}</span>
+			</li>
+		</ul>
+		<div class="post-content">{{ post.content|safe }}</div>
+	</div>
+	<br>
+
+	{% if messages %}
+		{% for message in messages %}
+			<div class="alert alert-success fs-5 text-center" role="alert">
+  				{{ message }}
+			</div>
+		{% endfor %}
+	{% else %}
+	<div class="form">
+		<h1 class="form-head">Join My Newsletter</h1>
+		<p class="form-subtitle">Subscribe to get the latest tutorials/writings by email.</p>
+		<form method="post" class="form-form">
+			{% csrf_token %}
+			{{ form.email }}
+			<input type="submit" class="input subscribe" value="Subscribe">
+		</form>
+		<small class="form-subhead">No spam. Unsubscribe at any time.</small>
+	</div>
+	{% endif %}
+	<hr>
+	{% include 'comments.html' with url=post.slug %}
+	<hr>
+{% endblock %}

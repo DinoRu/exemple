@@ -1,0 +1,15 @@
+<div class="row homepage-row">  
+    {% for post in recent_posts %}
+    <div class="col-sm-6 gy-4 d-flex aligns-items-stretch">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">{{ post.title }}</h5>
+          <p class="card-text">{{ post.description }}</p>
+          <div class="button-center text-center">
+            <a href="{{ post.get_absolute_url }}" class="btn btn-outline-primary">Read now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+</div>

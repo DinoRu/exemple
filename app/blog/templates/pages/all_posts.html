@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block main %}
+<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+<h1 class="display-4">All Tutorials</h1>
+<p class="lead">A complete list of free Django tutorials.</p>
+</div>
+<div class="container">
+	<form class="d-flex px-5 text-center">
+		<input class="form-control me-2 py-2 px-3" type="text-center" name="q" placeholder="Search" aria-label="Search">
+	</form>
+</div>
+<div class="container p-5 text-center">
+	{% for category in categories %}
+	<a href="{% url 'blog:all_posts' %}?q={{ category.name }}" class="btn btn-outline-primary mb-1">{{ category.name }}</a>
+	{% endfor %}
+</div>
+<div class="container p-5">
+	{% for post in posts %}
+	<div class="tutorials">
+		<h3><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></h3>
+		<p>{{ post.description }}</p>
+	</div>
+	{% endfor %}
+</div>
+{% endblock %}

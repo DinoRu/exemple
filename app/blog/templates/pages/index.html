@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load blog_tags %}
+{% block header %}
+  <div class="container-fluid">
+  	<div class="px-4 py-5 mt-5 text-center">
+      <h1 class="display-5 fw-bold">Django Insights</h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">Learn the ins and outs of Django through our comprehensive guides and tutorials.</p>
+        
+      </div>
+       <img class="d-block mx-auto" src="{% static 'img/login2.jpeg' %}" alt="" width="300" height="auto">
+    </div>
+    <div class="container mx-auto home-tutorial-link">
+      <a class="btn btn-success" href="{% url 'blog:all_posts' %}" role="button">ALL TUTORIALS</a>
+    </div>
+    <br>
+    <hr class="container">
+  </div>
+{% endblock %}
+
+{% block main %}
+  <br>
+  <h2 class="subhead">Featured Articles</h2>
+
+  {% show_recent_posts 8 %}
+{% endblock %}

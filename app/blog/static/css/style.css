@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&family=Oxygen:wght@300;400;700&display=swap');
+:root {
+	--bg__color: #e5e5e5;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Oxygen', sans-serif;
+	font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+}
+h1, h2, h3, h4, h5, h6 {
+	color: #000;
+    font-weight: 700;
+    line-height: initial;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1 {
+	font-size: 2.5rem;
+	font-weight: 500;
+	margin-bottom: 0.5rem;
+	padding: 14px 0;
+}
+
+.post-content h2 {
+	font-size: 32px!important;
+	margin-bottom: 10px!important;
+	margin-top: 2em!important;
+}
+
+.post-content p {
+	color: #2d2d2d;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.post-content li {
+	font-size: 20px;
+	line-height: 28px;
+}
+
+.form-container {
+	max-width: 968px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	padding: 2rem;
+	justify-content: center;
+	border: 1px solid #e3e3e3;
+	margin-top: 1rem;
+}
+
+.input {
+	padding: 0.5rem;
+	margin-bottom: 10px;
+}
+
+.navbar {
+	padding: 1rem;
+}
+
+.bg-light {
+	border-bottom: 1px solid #aaa;
+}
+.container {
+	max-width: 768px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.home-tutorial-link {
+	margin: 1rem 0;
+	text-align: center;
+}
+
+.btn-success {
+	font-weight: 500;
+	color: #fff;
+}
+
+.homepage-row {
+	margin-bottom: 15px;
+}
+
+.row {
+	margin: 0 -15px;
+}
+
+.card {
+	width: 22rem;
+}
+
+.logo {
+	color: #095B3D;
+}
+
+.navbar-brand {
+	font-weight: 900;
+}
+
+.subhead {
+	font-weight: 500;
+}
+
+.tutorials {
+	margin-bottom: 2rem;
+}
+
+.tutorials a {
+	text-decoration: none;
+}
+
+.post-meta {
+	margin-bottom: 1.5rem;
+	color: #6c757d;
+	padding-left: 0;
+}
+
+.post-meta li {
+	display: inline;
+	list-style: none;
+	margin-right: 1rem;
+}
+
+.post-title {
+	font-size: 3rem;
+	font-weight: 700;
+	margin-top: 2rem;
+	text-align: left;
+	margin-bottom: 0.5rem;
+	padding: 0;
+}
+
+.form {
+	width: 100%;
+	background-color: rgb(249, 250, 251);
+	padding: 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+}
+
+.form-head {
+	color: rgb(77, 77, 77);
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin: 3rem 0;
+}
+
+.form-subtitle {
+	margin-bottom: 1rem;
+	font-size: 18px;
+	color: rgb(104, 104, 104);
+}
+
+.form-subhead {
+	margin-top: 1.5rem;
+	margin-bottom: 2.5rem;
+	color: rgba(77, 77, 77, 0.7);
+
+	font-size: 13px;
+	font-weight: 400;
+}
+
+.input {
+	padding: 12px;
+	background: #fff;
+	border-radius: 4px;
+	border: 1px solid #e3e3e3;
+}
+
+.form-form {
+	width: 100%;
+	text-align: center;
+}
+.email {
+	width: 70%;
+	outline: none;
+}
+
+.subscribe {
+	background: #0B2EF3;
+	color: #fff;
+}
+
+.subscribe:hover {
+	filter: brightness(89%);
+}
+
+#disqus_thread {
+	text-align: center;
+}
+
+#disqus_thread a {
+	text-decoration: none;
+	font-weight: 700;
+	font-size: 1rem;
+	color: #2E43B7;
+}
+
+.headshot {
+	max-height: 250px;
+	max-width: 250px;
+	object-fit: cover;
+}
+
+.bold {
+	font-weight: 600;
+}
+
+.iframe {
+	border: none;
+}
+
+pre code.hljs {
+	border-radius: 5px;
+}
+
+blockquote{
+  font-size: 1.4em;
+  width:100%;
+  margin:50px auto;
+  font-family:Open Sans;
+  font-style:italic;
+  color: #555555;
+  padding:1.2em 30px 1.2em 75px;
+  border-left:8px solid #000 ;
+  line-height:1.6;
+  position: relative;
+  background:#EDEDED;
+}
+
+blockquote::before{
+  font-family:Arial;
+  content: "\201C";
+  color:#000;
+  font-size:4em;
+  position: absolute;
+  left: 10px;
+  top:-10px;
+}
+
+blockquote::after{
+  content: '';
+}
+
+blockquote span{
+  display:block;
+  color:#333333;
+  font-style: normal;
+  font-weight: bold;
+  margin-top:1em;
+}
+
+blockquote p {
+	font-style: italic;
+}
