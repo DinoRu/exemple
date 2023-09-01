@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.db import models
-#from tinymce.widgets import TinyMCE
+
 from app.blog.models import Post, Category, SubscribeUsers
 
 

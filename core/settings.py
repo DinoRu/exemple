@@ -41,7 +41,6 @@ INSTALLED_APPS = [
     'app.blog',
     'ckeditor',
     'ckeditor_uploader',
-    #'tinymce',
 ]
 
 MIDDLEWARE = [

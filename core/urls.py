@@ -22,7 +22,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('blog/', include('app.blog.urls', namespace='blog')),
     path('ckeditor/', include('ckeditor_uploader.urls')),
-    #path('tinymce/',include('tinymce.urls')), 
 ]
 
 if settings.DEBUG:

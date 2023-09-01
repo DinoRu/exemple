@@ -217,8 +217,8 @@ h1 {
 }
 
 .headshot {
-	max-height: 250px;
-	max-width: 250px;
+	height: 250px;
+	width: 250px;
 	object-fit: cover;
 }
 
@@ -272,4 +272,9 @@ blockquote span{
 
 blockquote p {
 	font-style: italic;
+}
+
+.active {
+	font-weight: 800;
+	text-decoration: line-through;
 }
